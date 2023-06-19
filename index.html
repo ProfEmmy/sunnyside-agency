@@ -9,13 +9,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles.css">
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles2.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body h1,
+    p.name,
+    .learn-more>a>p,
+    .contact-link>button {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+    }
+
+    .learn-more>a>p {
+      line-height: none;
+    }
+
+    p {
+      line-height: 30px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -76,7 +96,7 @@
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Projects</a>
-        <a href="#" class="contact-link">Contact</a>
+        <a href="#" class="contact-link">CONTACT</a>
       </div>
     </div>
   </nav>
@@ -186,36 +206,102 @@
 
   <main class="mobile-main">
     <div class="mobile-about">
-      <div class="description1">
+      <div class="description">
         <img src="images\mobile\image-transform.jpg" alt="image-transform">
         <div class="txtdiv">
-          <h1>Transform your<br>brand</h1>
-          <p>We are a full-service creative agency<br>specializing in helping brands grow fast.<br>
-            Engage your clients through compelling<br>visuals that do most of the marketing for<br>you.<br></p>
-          <div class="learn-more">
-            <a href="#">
-              <hr>
-              <p>LEARN MORE</p>
-            </a>
+          <div class="mobile-inner-txtdiv">
+            <h1>Transform your<br>brand</h1>
+            <p>We are a full-service creative agency<br>specializing in helping brands grow fast.<br>
+              Engage your clients through compelling<br>visuals that do most of the marketing for<br>you.<br></p>
+            <div class="learn-more">
+              <a href="#">
+                <hr>
+                <p>LEARN MORE</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="description1">
+      <div class="description">
         <img src="images\mobile\image-stand-out.jpg" alt="image-stand-out">
         <div class="txtdiv">
-          <h1>Stand out to the<br>right audience</h1>
-          <p>Using a collaborative formula of<br>designers, researchers, photographers,<br>videographers, and
-            copywriters,
-            we’ll<br>build and extend your brand in digital<br>places.<br></p>
-          <div class="learn-more">
-            <a href="#">
-              <hr class="hr2">
-              <p>LEARN MORE</p>
-            </a>
+          <div class="mobile-inner-txtdiv">
+            <h1>Stand out to the<br>right audience</h1>
+            <p>Using a collaborative formula of<br>designers, researchers, photographers,<br>videographers, and
+              copywriters,
+              we’ll<br>build and extend your brand in digital<br>places.<br></p>
+            <div class="learn-more">
+              <a href="#">
+                <hr class="hr2">
+                <p>LEARN MORE</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="mobile-aboutdiv">
+        <div class="description1">
+          <div class="graphic-design-div">
+            <h1>Graphic Design</h1>
+            <p>Great design makes you memorable. We deliver<br>artwork that underscores your brand message<br>and
+              captures
+              potential clients’ attention.<br></p>
+          </div>
+        </div>
+        <div class="description2">
+          <div class="photography-div">
+            <h1>Photography</h1>
+            <p>Increase your credibility by getting the most<br>stunning, high-quality photos that improve
+              your<br>business
+              image.<br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-clients-testimonials">
+      <div class="mobile-clients-testimonials-div">
+        <h1>CLIENT TESTIMONIALS</h1>
+        <div class="emily">
+          <img src="images\image-emily.jpg" alt="image-emily">
+          <p class="mobile-testimony">
+            We put our trust in Sunnyside and they<br>delivered, making sure our needs were<br>met and deadlines were
+            always
+            hit.<br>
+          </p>
+          <p class="mobile-name">Emily R.</p>
+          <p class="mobile-title">Marketing Director</p>
+        </div>
+        <div class="thomas">
+          <img src="images\image-thomas.jpg" alt="image-thomas">
+          <p class="mobile-testimony">
+            Sunnyside’s enthusiasm coupled with<br>their keen interest in our brand’s success<br>made it a satisfying
+            and
+            enjoyable<br>experience.<br>
+          </p>
+          <p class="mobile-name">Thomas S.</p>
+          <p class="mobile-title">Chief Operating Officer</p>
+        </div>
+        <div class="jennie">
+          <img src="images\image-jennie.jpg" alt="image-jennie">
+          <p class="mobile-testimony">
+            Incredible end result! Our sales increased<br>over 400% when we worked with<br>Sunnyside. Highly
+            recommended!
+            <br>
+          </p>
+          <p class="mobile-name">Jennie F.</p>
+          <p class="mobile-title">Chief Operating Officer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-images-div">
+      <img src="images\desktop\image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img src="images\desktop\image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img src="images\desktop\image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img src="images\desktop\image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
     </div>
   </main>
 
@@ -245,6 +331,32 @@
         </a>
       </div>
     </div>
+  </footer>
+
+  <footer class="mobile-footer">
+    <div class="footer">
+      <div class="footer-logo-div">
+        <img src="images\footer-logo.svg" alt="logo">
+      </div>
+      <div class="sitemap-div">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+      <div class="social-media-links">
+        <a href="#">
+          <img src="images\icon-facebook.svg" alt="icon-facebook">
+        </a>
+        <a href="#">
+          <img src="images\icon-instagram.svg" alt="icon-pinterests">
+        </a>
+        <a href="#">
+          <img src="images\icon-twitter.svg" alt="icon-twitter">
+        </a>
+        <a href="#">
+          <img src="images\icon-pinterest.svg" alt="icon-pinterest">
+        </a>
+      </div>
   </footer>
 </body>
 
