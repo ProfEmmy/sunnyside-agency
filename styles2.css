@@ -5,12 +5,10 @@
 }
 
 body {
-    width: auto;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    overflow-x: hidden;
 }
 
 .mobile-nav {
