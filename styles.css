@@ -258,7 +258,7 @@ footer {
 }
 
 .sitemap-div {
-    width: 390px;
+    width: 450px;
     display: grid;
     grid-template-columns: auto auto auto;
 }

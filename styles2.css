@@ -65,7 +65,6 @@ body {
 .mobile-navlinks-div {
     display: flex;
     align-items: center;
-    margin-left: -2vw;
     background-color: white;
     position: absolute;
     top: 13vh;
@@ -158,7 +157,7 @@ body {
     grid-area: overlap;
     width: 140px;
     height: 7px;
-    margin-top: 5.4vh;
+    margin-top: 35px;
     color: hsl(51, 100%, 49%);
     background-color: hsl(51, 100%, 49%);
 }
@@ -169,7 +168,7 @@ body {
 }
 
 .mobile-aboutdiv {
-    height: 180vh;
+    height: 200vh;
     display: grid;
     grid-template-rows: auto auto;
 }
@@ -179,14 +178,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
-    background-size: 100vw 90vh;
+    height: 100vh;
+    background-size: 100vw 100vh;
     background-image: url("images\\mobile\\image-graphic-design.jpg");
     background-repeat: no-repeat;
 }
 
 .graphic-design-div {
-    margin-top: 45vh;
+    margin-top: 47vh;
     text-align: center;
     color: hsl(167, 40%, 24%);
 }
@@ -196,7 +195,7 @@ body {
 }
 
 .graphic-design-div>p {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .description2 {
@@ -204,14 +203,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
-    background-size: 100vw 90vh;
+    height: 100vh;
+    background-size: 100vw 100vh;
     background-image: url("images\\mobile\\image-photography.jpg");
     background-repeat: no-repeat;
 }
 
 .photography-div {
-    margin-top: 45vh;
+    margin-top: 47vh;
     text-align: center;
     color: hsl(198, 62%, 26%);
 }
@@ -221,7 +220,7 @@ body {
 }
 
 .photography-div>p {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .mobile-clients-testimonials {
@@ -237,18 +236,19 @@ body {
 }
 
 .mobile-clients-testimonials-div>h1 {
+    margin-bottom: -60px;
     font-size: 1.3em;
     letter-spacing: 4px;
     color: hsl(210, 4%, 67%);
 }
 
 .mobile-clients-testimonials-div>div {
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .mobile-clients-testimonials-div>div>img {
-    width: 25vw;
-    height: 20vh;
+    width: 20vw;
+    height: 15vh;
     border-radius: 50%;
 }
 
@@ -308,8 +308,8 @@ p.mobile-title {
 }
 
 .sitemap-div {
-    margin-bottom: -9vh;
-    width: 60vw;
+    margin-bottom: -10vh;
+    width: 450px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -329,4 +329,8 @@ p.mobile-title {
 .social-media-links>a {
     text-decoration: none;
     margin-right: 2vw;
+}
+
+.hide-scroll {
+    overflow-y: hidden;
 }
