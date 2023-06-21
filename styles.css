@@ -43,7 +43,9 @@ body {
 }
 
 .links-div>a {
-    font-size: 1.3em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     margin-right: 35px;
@@ -59,6 +61,13 @@ body {
     margin-top: -10px;
     border: 0px;
     border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contact-link>button:hover {
+    box-shadow: 0px 0px 3px black;
+    background-color: #3ebfff;
+    color: white;
 }
 
 .inner-navdiv2 {
@@ -133,6 +142,12 @@ body {
     margin-top: 35px;
     color: hsl(51, 100%, 49%);
     background-color: hsl(51, 100%, 49%);
+}
+
+.learn-more>a>hr:hover {
+    margin-top: 37px;
+    filter: opacity(1);
+    border: 0px;
 }
 
 .graphic-design-div {
@@ -269,6 +284,10 @@ footer {
     font-size: 1.3em;
 }
 
+.sitemap-div>a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
 .social-media-links {
     margin-top: 100px;
 }
@@ -276,4 +295,9 @@ footer {
 .social-media-links>a {
     text-decoration: none;
     margin-right: 20px;
+}
+
+.social-media-links>a>img:hover {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(56deg) brightness(106%) contrast(100%);
+    color: white;
 }

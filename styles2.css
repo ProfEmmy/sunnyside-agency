@@ -4,13 +4,18 @@
     display: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     width: 105vw;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    overflow-x: hidden;
+    position: relative;
 }
 
 .mobile-nav {
@@ -67,15 +72,19 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
+    background-size: 79vw 55vh;
+    background-size: 10vh;
     position: absolute;
     top: 13vh;
-    width: 78vw;
+    width: 79vw;
     height: 55vh;
     border-top: 5vh solid #3ebfff;
     border-right: 5vw solid white;
 }
 
 .mobile-nav-links {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
     height: 45vh;
     margin-top: 1vh;
     width: 78vw;
@@ -88,13 +97,13 @@ body {
 .mobile-nav-links>a {
     text-decoration: none;
     color: hsl(210, 4%, 67%);
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .mobile-nav-links>.contact-link {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1em;
     width: 33vw;
     height: 8vh;
     display: flex;
@@ -110,7 +119,7 @@ body {
 }
 
 .description {
-    height: 140vh;
+    height: 120vh;
     margin-right: 0px;
     margin-left: 0px;
     display: grid;
@@ -119,23 +128,21 @@ body {
 
 .description>img {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
 }
 
 .txtdiv {
     display: grid;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     text-align: center;
 }
 
 .mobile-inner-txtdiv>h1 {
-    font-size: 2.7em;
     color: hsl(212, 27%, 19%);
 }
 
 .mobile-inner-txtdiv>p {
-    font-size: 1.1em;
     line-height: 30px;
     color: hsl(213, 9%, 39%);
 }
@@ -191,14 +198,6 @@ body {
     color: hsl(167, 40%, 24%);
 }
 
-.graphic-design-div>h1 {
-    font-size: 2.7em;
-}
-
-.graphic-design-div>p {
-    font-size: 1em;
-}
-
 .description2 {
     display: flex;
     justify-content: center;
@@ -214,14 +213,6 @@ body {
     margin-top: 47vh;
     text-align: center;
     color: hsl(198, 62%, 26%);
-}
-
-.photography-div>h1 {
-    font-size: 2.7em;
-}
-
-.photography-div>p {
-    font-size: 1em;
 }
 
 .mobile-clients-testimonials {
@@ -249,7 +240,7 @@ body {
 
 .mobile-clients-testimonials-div>div>img {
     width: 20vw;
-    height: 15vh;
+    height: 10vh;
     border-radius: 50%;
 }
 
@@ -310,7 +301,7 @@ p.mobile-title {
 
 .sitemap-div {
     margin-bottom: -10vh;
-    width: 450px;
+    width: 330px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -330,8 +321,4 @@ p.mobile-title {
 .social-media-links>a {
     text-decoration: none;
     margin-right: 2vw;
-}
-
-.hide-scroll {
-    overflow-y: hidden;
 }
